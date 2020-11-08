@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20201025092553_security.cs" />
+    <Compile Remove="Migrations\20201025092553_security.Designer.cs" />
+    <Compile Remove="Migrations\20201025161115_Security.cs" />
+    <Compile Remove="Migrations\20201025161115_Security.Designer.cs" />
+    <Compile Remove="Migrations\20201025162244_Security.cs" />
+    <Compile Remove="Migrations\20201025162244_Security.Designer.cs" />
+    <Compile Remove="Migrations\20201025163558_Security.cs" />
+    <Compile Remove="Migrations\20201025163558_Security.Designer.cs" />
+    <Compile Remove="Migrations\20201025165320_Security.cs" />
+    <Compile Remove="Migrations\20201025165320_Security.Designer.cs" />
+    <Compile Remove="Migrations\20201025172649_Security.cs" />
+    <Compile Remove="Migrations\20201025172649_Security.Designer.cs" />
+    <Compile Remove="Migrations\20201025174544_Security.cs" />
+    <Compile Remove="Migrations\20201025174544_Security.Designer.cs" />
+    <Compile Remove="Migrations\20201025175315_Security.cs" />
+    <Compile Remove="Migrations\20201025175315_Security.Designer.cs" />
+    <Compile Remove="Migrations\20201106164754_Add_Table_Users_Roles.cs" />
+    <Compile Remove="Migrations\20201106164754_Add_Table_Users_Roles.Designer.cs" />
+    <Compile Remove="Migrations\20201106165650_Add_Security_Tables.cs" />
+    <Compile Remove="Migrations\20201106165650_Add_Security_Tables.Designer.cs" />
+    <Compile Remove="Migrations\20201106171823_Add_Security_Tables.cs" />
+    <Compile Remove="Migrations\20201106171823_Add_Security_Tables.Designer.cs" />
+    <Compile Remove="Migrations\20201107160529_Add_Securities_Table.cs" />
+    <Compile Remove="Migrations\20201107160529_Add_Securities_Table.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Repositories\3qcnjyyv.rzd~" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Dapper" Version="2.0.35" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Express.DomainModel\Express.DomainModel.csproj" />
+    <ProjectReference Include="..\Express.Shared\Express.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+</Project>
